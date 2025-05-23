@@ -1811,84 +1811,32 @@ tbody small {
 
 
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+@keyframes scroll{
+	0%{
+		transform:translateX(0);
+	}
+	100%{
+		transform:translateX(calc(-250px*5));
+	}
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
+.slider{
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+	align-items: center;
+	justify-content: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    color: #00A9E0; /* IonQ Blue */
-    margin-bottom: 5px;
+.slider .slide-track{
+	animation: scroll 40s linear infinite;
+	display:flex;
+	width: calc(250px *5);
 }
 
-.meeting-date {
-    font-size: 1.2rem;
-    color: #6C2C8F; /* IonQ Purple */
-}
-
-.agenda {
-    margin-bottom: 30px;
-}
-
-.agenda h2 {
-    font-size: 1.8rem;
-    color: #6C2C8F; /* IonQ Purple */
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #ffffff;
-    border-left: 5px solid #00A9E0; /* IonQ Blue */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-}
-
-li .time {
-    font-weight: bold;
-    color: #00A9E0; /* IonQ Blue */
-    flex: 0 0 150px;
-}
-
-li .agenda-item {
-    font-size: 1rem;
-    color: #555;
-    flex: 1;
-}
-
-.time-slot {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.group-title {
-    font-weight: bold;
-    color: #00A9E0; /* IonQ Blue */
-    text-align: center;
-    flex: 1;
-}
-
-footer {
-    text-align: center;
-    font-size: 1rem;
-    color: #777;
-    margin-top: 20px;
+.slider .slide{
+	height: 100px;
+	width: 250px;
 }
