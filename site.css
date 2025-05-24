@@ -1827,13 +1827,13 @@ tbody small {
 	position: relative;
 	width: auto;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .slider .slide-track{
-	animation: scroll 60s linear infinite;
+	/*animation: scroll 60s linear infinite;*/
 	display:flex;
-	width: calc(250px*5);
+	width: calc(250px*7);
 }
 
 .slider .slide{
@@ -1961,3 +1961,19 @@ $light_grey:#A39D9E;
   }
   
 }
+
+ .styled-table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    .styled-table th, .styled-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .styled-table th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
